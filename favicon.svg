@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#151A23"/>
+  <rect x="11.5" y="11.5" width="41" height="41" rx="10" fill="#1B2430" stroke="#27A9D7" stroke-width="1.5"/>
+  <path d="M8 20H3M8 32H3M8 44H3M56 20h5M56 32h5M56 44h5M20 8V3M32 8V3M44 8V3M20 56v5M32 56v5M44 56v5" stroke="#27A9D7" stroke-width="1.5" stroke-linecap="round" opacity=".7"/>
+  <text x="32" y="40" text-anchor="middle" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" letter-spacing="-1" fill="#FFFFFF">SL</text>
+</svg>

@@ -1664,6 +1664,8 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
   border-radius: 0 !important;
 }
 .dialog__panel.dialog__panel--lead {
+  display: flex;
+  flex-direction: column;
   width: 100% !important;
   height: 100% !important;
   max-height: none !important;
@@ -1671,6 +1673,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
   border: 0 !important;
   border-radius: 0 !important;
   background: #fff;
+  overflow: hidden;
 }
 .dialog.dialog--lead .dialog__close {
   top: 10px;
@@ -1678,8 +1681,10 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
   background: rgba(10, 15, 21, .82);
 }
 .ya-form {
+  flex: 1 1 auto;
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
+  min-height: 0;
 }
 .ya-form iframe {
   display: block;
@@ -1690,6 +1695,29 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
   border-radius: 0;
   background: #fff;
 }
+.lead-back {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 54px;
+  padding: 14px 18px;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  background: #151a23;
+  color: var(--white);
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+.lead-back:hover { background: #1d2531; color: var(--accent-light); }
+.lead-back:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+.lead-back .icon { width: 16px; height: 16px; }
 
 /* Lead form */
 .lead-form { margin-top: 22px; }
